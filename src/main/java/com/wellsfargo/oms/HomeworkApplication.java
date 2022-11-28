@@ -47,7 +47,7 @@ public class HomeworkApplication {
         LOGGER.info("Generated " + numberCccOrders + " CCC order(s)");
 
         new Thread(() -> {
-            LOGGER.info("Existing application.");
+            LOGGER.info("Exiting application.");
             SpringApplication.exit(appContext, () -> 0);
         }).start();
     }
